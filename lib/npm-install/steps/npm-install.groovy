@@ -6,5 +6,3 @@ void call() {
   env.PATH = "${nodeHome}/bin:${env.PATH}"
   sh 'npm install'
 }
-
-
