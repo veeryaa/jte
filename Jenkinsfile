@@ -7,8 +7,8 @@ pipeline {
       steps {
         echo 'Hello from declarative Jenkinsfile!'
         script {
-          // Call a library step implemented in lib/helloLibrary/steps/helloWorld.groovy
-          helloWorld()
+          // Call a library step implemented in lib/helloLibrary/steps/helloLibrary.groovy
+          helloLibrary()
         }
       }
     }
