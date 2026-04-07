@@ -12,5 +12,15 @@ pipeline {
         }
       }
     }
+
+    stage('Install npm dependencies') {
+      steps {
+        echo 'Installing npm dependencies using npm-install library...'
+        script {
+          // Call a library step implemented in lib/npm-install/steps/npm-install.groovy
+          npm-install()
+        }
+      }
+    }
   }
 }
